@@ -6,13 +6,14 @@ class CashRegister
     @discount = discount
     @items = []
   end 
-def add_item(title, price, quantity=1)
+  def add_item(title, price, quantity=1)
     @total += price * quantity 
     quantity.times do 
       @items << title 
     end 
     @last_item = price * quantity 
   end   
+  
   def apply_discount
     if discount != 0 
       @total -= (@total * (@discount / 100.to_f))
@@ -21,8 +22,6 @@ def add_item(title, price, quantity=1)
       "There is no discount to apply."
     end 
   end 
-  
-  
   
   def items 
     @items 
@@ -35,5 +34,6 @@ def add_item(title, price, quantity=1)
 end 
   
   def total
+    @total
   end 
 end
