@@ -29,3 +29,5 @@ class CashRegister
     self.total = self.total - @last_item
   end 
  end
+
+#didn't need an items method or a total method. tricky tricky
