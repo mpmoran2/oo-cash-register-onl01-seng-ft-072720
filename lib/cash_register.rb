@@ -28,7 +28,7 @@ class CashRegister
      @items.delete_at(-1)
     self.total = self.total - @last_item
   end 
-end 
+
   
   def total
     @total
