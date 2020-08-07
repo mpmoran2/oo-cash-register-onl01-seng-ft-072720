@@ -7,6 +7,19 @@ class CashRegister
     @itmes = []
   end 
   
-
+  def add_item(item, price, quantity=1)
+    self.total += amount * quantity
+  end 
   
+  def apply_discount
+  end 
+  
+  def items
+  end 
+  
+  def void_last_transaction
+  end 
+  
+  def total
+  end 
 end
