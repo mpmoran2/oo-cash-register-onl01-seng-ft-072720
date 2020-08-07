@@ -7,6 +7,6 @@ class CashRegister
     @itmes = []
   end 
   
-  def 
+
   
 end
